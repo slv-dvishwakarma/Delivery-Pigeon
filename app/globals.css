@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Poppins, sans-serif !important;
+  }
+  @media only screen and (max-width: 600px) {
+    .special-case {
+      font-size: 12px;
+  }
+  .custom-slick-slider-testimonials .slick-prev {
+    left: -18px !important;
+  }
+  .testimonials .custom-slick-slider-testimonials .slick-arrow.slick-next {
+    right: 6px !important;
+  }
+  .margin-md {
+    margin-top: 25px;
+}
+  .portfolio {
+    margin: 25px 0px;
+}
+    .bookForm .form-group {
+        width: 95% !important;
+    } 
+    .md-flex {
+      @apply block;
+    }
+    .bookForm button {
+        width: 95% !important;
+        padding: 10px;
+    }
+    .choose-styling {
+      @apply text-center mx-0 my-[25px];
+    }
+ 
+    .flex-md {
+      @apply flex;
+    }
+    .md-text-center {
+      @apply text-center;
+    }
+    .closed-menu {
+      animation: slideOut 0.5s forwards;
+      position: fixed;
+      top: 0;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF;
+      transition: left 0.5s ease;
+  }
+  .about-banner:before {
+    width: 325px !important;
+    height: 265px !important;
+}
+.clipy {
+  position: relative !important;
+  clip-path: content-box !important;
+  width: 333px !important;
+    height: 370px !important;
+}
+    .closed-menu .mobile-padding {
+      display: none;
+  }
+    .hide-in-mobile {
+      @apply hidden;
+    }
+    .button-design-in-slide-menu .button-1 {
+      @apply w-[90%] block bg-[#005AAB] mx-[21px] my-5;
+    }
+    .footer-in-mobile-view .footer-in-mobileview {
+      @apply mx-0 my-[30px];
+    }
+    .copyright-section {
+      @apply text-center;
+    }
+    .copyright-section .social-icons {
+      @apply justify-center;
+    }
+    .hidden-button {
+      @apply hidden;
+    }
+    .head .text-57px {
+        font-size: 40px !important;
+    }
+    .mobile-py-30 {
+      @apply pt-20 pb-0 px-0;
+    }
+    .mobile-navigation .mobile-padding .active a:after {
+      background: transparent;
+    }
+    .show-button-mobile {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .mobile-flex {
+      @apply flex;
+    }
+
+    .sm-pt-10 {
+      @apply pt-10;
+    }
+    /* about us */
+    .crumbs {
+      @apply pt-5;
+    }
+    .reverse-col {
+      @apply flex;
+      flex-flow: column-reverse;
+    }
+    .about-img:before {
+      border: none !important;
+  }
+
+    /* Contact us */
+
+  .contact-shadow {
+    padding: 10px 20px;
+}
+.contact-shadow-flex {
+  display: flex;
+  align-items: center;
+}
+.sm-md-flex{
+  display: flex;
+}
+.contact-shadow h5 {
+  padding: 0px;
+}
+.contact-shadow .contact-icon {
+  padding: 0px 10px;
+}
+  }
+  @media screen and (min-device-width: 601px) and (max-device-width: 1150px) {
+    .footer-flex {
+      display: block !important;
+  }
+  .testimonials .custom-slick-slider-testimonials .slick-arrow.slick-next {
+    right: 0px !important;
+}
+.testimonials .custom-slick-slider-testimonials .slick-prev {
+  left: -19px !important;
+}
+  .about-banner:before{
+    width: 320px !important;
+    height: 280px !important;
+  }
+  
+
+.clipy {
+  width: 250px !important;
+  height: 296px !important;
+  margin-top: 0px !important;
+}
+    .head .text-57px {
+        font-size: 50px !important;
+    }
+    .closed-menu .mobile-padding {
+      @apply hidden;
+    }
+    .mobile-padding {
+      @apply mt-[60px];
+    }
+    .hide-in-mobile {
+      @apply hidden;
+    }
+    .button-design-in-slide-menu .button-1 {
+      @apply w-[90%] block bg-[#005AAB] mx-[21px] my-5;
+    }
+    .footer-in-tablet-view .footer-in-mobileview {
+      @apply mt-[22px];
+    }
+    .closed-menu {
+      @apply animate-[slideOut_0.5s_forwards] fixed w-full h-full bg-white transition-[left] duration-[0.3s] ease-[ease] left-0 top-0;
+    }
+    .about-img:before {
+      border: none !important;
+  }
+  }
+  @media (min-width: 1536px){
+    .container {
+        max-width: 1320px !important;
+    }
+    }
+  @keyframes slideOut {
+    from {
+      @apply translate-x-0;
+    }
+    to {
+      @apply -translate-x-full;
+    }
+  }
+  @keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+  .show-button-mobile {
+    display: none;
+}
+  .bookForm .form-group {
+    @apply w-2/5;
+  }
+  .bookForm button {
+    @apply w-1/5;
+  }
+  input::placeholder {
+    @apply text-xl text-[#CFCFCF];
+    font-family: Poppins, sans-serif;
+  }
+  .leading-11 {
+    @apply leading-[60px];
+  }
+  .bookForm .form-group .input-border {
+    @apply shadow-[rgba(149,157,165,0.2)_0px_8px_24px] border border-solid border-[#005aab63];
+  }
+  .font-36px {
+    @apply text-4xl;
+  }
+
+  .border-bottom-style {
+    @apply border-b-[#787878] border-b border-solid;
+  }
+  .hide-in-desktop {
+    @apply hidden;
+  }
+  .button-2 {
+    background-size: 800px !important;
+}
+.button-2 {
+color: #fff;
+border: 2px solid #005AAB;
+background-image: linear-gradient(37deg, #005AAB 50%, transparent 50%);
+background-size: 500px;
+background-repeat: no-repeat;
+background-position: 0%;
+transition: background 300ms ease-in-out;
+border-radius: 10px;
+}
+.button-2:hover {
+background-position: 100%;
+background-color: transparent;
+color: #005AAB;
+}
+.p-0-remove button {
+  padding: 10px 42px 10px 9px;
+}
+/* About Page */
+
+.about-img:before {
+  content: "";
+  position: absolute;
+  border: 7px white solid;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+  z-index: 0;
+}
+.hover-text-white:hover h3 {
+  @apply text-[white];
+}
+.hover-text-white:hover .hover-image {
+  @apply block;
+}
+.hover-text-white:hover .without-hover {
+  @apply hidden;
+}
+/* Contact */
+.contact-shadow-flex:hover .contact-icon {
+  color: white;
+}
+.contact-form input{
+  outline: none;
+}
+.submit-btn {
+  padding: 8px 20px;
+  color: #fff !important;
+  border: 2px solid #005AAB !important;
+  background-image: linear-gradient(37deg, #005AAB 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 300ms ease-in-out;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.submit-btn:hover {
+  background-position: 100%;
+  background-color: transparent;
+  color: #005AAB !important;
+}
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+.steps-hover:hover .steps-icon {
+  bottom: 0;
+}
+.slick-prev:before, .slick-next:before {
+  color: #005AAB !important;
+  font-size: 25px !important;
+}
+.slick-next:before {
+  content: '' !important;
+}
+.slick-prev:before {
+  content: '' !important;
+}
+.custom-slick-slider-testimonials .slick-prev {
+  left: -45px;
+}
+.custom-slick-slider-testimonials .slick-prev svg{
+  background-color: #005aabbf;
+  color: white !important;
+  font-size: 45px !important;
+  padding: 10px 0px !important;
+}
+.custom-slick-slider-testimonials .slick-arrow.slick-next {
+  right: -24px !important;
+}
+.custom-slick-slider-testimonials .slick-next svg{
+  background-color: #005aabbf;
+  color: white !important;
+  font-size: 45px !important;
+  padding: 10px 0px !important;
+}
